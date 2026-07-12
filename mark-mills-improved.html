@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sell Your Business for Full Value | Mark Mills OBE DL</title>
+<meta name="description" content="Confidential business sale advice from Mark Mills OBE DL, founder of Cardpoint plc. A proven 40-step process to maximise your exit value." />
+<meta property="og:title" content="Sell Your Business for Full Value | Mark Mills OBE DL" />
+<meta property="og:description" content="A proven 40-step process to maximise your exit value, from a man who built and sold his own £100m business." />
+<meta property="og:image" content="images/mark-portrait.jpg" />
+<link rel="icon" href="images/logo-1.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#141317;
+    --bg-soft:#1D1C22;
+    --card:#242229;
+    --line: rgba(245,245,247,0.10);
+    --ink:#F5F5F7;
+    --ink-soft:#A9A7B2;
+    --pink:#EC1C6E;
+    --pink-bright:#FF2D78;
+    --pink-dark:#C4145A;
+    --gold:#D9B65C;
+    --radius:14px;
+    --shadow: 0 24px 60px -24px rgba(0,0,0,0.65);
+    --maxw: 1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', -apple-system, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+  h1,h2,h3{
+    font-family:'Archivo', sans-serif;
+    font-weight:800;
+    line-height:1.06;
+    margin:0;
+    letter-spacing:-0.01em;
+    text-transform:uppercase;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--pink-bright);
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    font-family:'Inter', sans-serif; font-weight:700; font-size:14.5px;
+    padding:16px 30px; border-radius:6px; border:2px solid transparent;
+    cursor:pointer; text-decoration:none; white-space:nowrap;
+    letter-spacing:0.02em;
+    transition:transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
+  }
+  .btn:focus-visible{outline:3px solid var(--pink-bright); outline-offset:3px;}
+  .btn-primary{
+    background:var(--pink); color:#fff;
+    box-shadow:0 14px 30px -10px rgba(236,28,110,0.55);
+  }
+  .btn-primary:hover{background:var(--pink-dark); transform:translateY(-2px);}
+  .btn-outline{background:transparent; color:var(--ink); border-color:var(--line);}
+  .btn-outline:hover{border-color:var(--ink); transform:translateY(-2px);}
+
+  /* NAV */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(20,19,23,0.82);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 0; gap:24px;}
+  .logo{display:flex; align-items:center; gap:12px; text-decoration:none;}
+  .logo img{height:20px; width:auto;}
+  .logo .obe{font-family:'Archivo', sans-serif; font-weight:700; font-size:11px; letter-spacing:0.16em; color:var(--pink-bright); padding-left:12px; border-left:1px solid var(--line);}
+  .navlinks{display:flex; gap:30px; list-style:none; margin:0; padding:0; font-size:14px; font-weight:600;}
+  .navlinks a{text-decoration:none; color:var(--ink-soft); transition:color .15s ease;}
+  .navlinks a:hover{color:var(--ink);}
+  .nav-right{display:flex; align-items:center; gap:18px;}
+  .nav-phone{font-size:13.5px; color:var(--ink-soft); font-weight:600;}
+  .burger{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .burger span{display:block; width:22px; height:2px; background:var(--ink); margin:5px 0; border-radius:2px;}
+  #mnav{display:none;}
+  #mnav.open{display:block;}
+  #mnav ul{list-style:none; margin:0 0 16px; padding:0; display:grid; gap:14px; font-size:15px; font-weight:600;}
+  #mnav a{text-decoration:none; color:var(--ink-soft);}
+
+  /* HERO */
+  .hero{position:relative; overflow:hidden;}
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(720px 480px at 92% 0%, rgba(236,28,110,0.20), transparent 62%);
+    pointer-events:none;
+  }
+  .hero-grid{
+    position:relative; display:grid; grid-template-columns:1.05fr 0.95fr;
+    gap:48px; align-items:center; padding:70px 0 64px;
+  }
+  .hero-inner{max-width:600px;}
+  .hero h1{font-size:clamp(38px,5.2vw,64px); margin:20px 0 22px;}
+  .hero h1 span{color:var(--pink-bright);}
+  .hero p.lede{font-size:18px; color:var(--ink-soft); max-width:54ch; margin:0 0 32px;}
+  .hero-actions{display:flex; gap:14px; flex-wrap:wrap;}
+  .hero-photo{position:relative;}
+  .hero-photo .frame{
+    position:relative; border-radius:20px; overflow:hidden;
+    border:1px solid var(--line); box-shadow:var(--shadow);
+    background:#0f0e11;
+  }
+  .hero-photo img{width:100%; height:520px; object-fit:cover; object-position:22% center;}
+  .hero-photo .tag{
+    position:absolute; left:18px; bottom:18px; z-index:2;
+    background:rgba(20,19,23,0.72); backdrop-filter:blur(6px);
+    border:1px solid var(--line); border-radius:12px; padding:12px 16px;
+  }
+  .hero-photo .tag .n{font-family:'Archivo', sans-serif; font-weight:800; font-size:15px; text-transform:uppercase; letter-spacing:0.01em;}
+  .hero-photo .tag .r{font-size:12px; color:var(--pink-bright); font-weight:600; margin-top:2px; letter-spacing:0.04em;}
+
+  .stat-strip{
+    position:relative;
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:30px 0; display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
+  }
+  .stat .num{font-family:'Archivo', sans-serif; font-weight:900; font-size:clamp(26px,3vw,38px); color:var(--pink-bright);}
+  .stat .lbl{font-size:12.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.06em; margin-top:4px;}
+
+  /* CLIENT LOGOS */
+  .clients-strip{padding:52px 0 12px;}
+  .clients-strip .lead{text-align:center; font-size:12.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-bottom:30px;}
+  .logo-row{display:flex; flex-wrap:wrap; gap:18px; justify-content:center;}
+  .logo-chip{
+    background:#fff; border-radius:12px; padding:18px 22px;
+    display:flex; align-items:center; justify-content:center;
+    height:96px; width:170px; box-shadow:0 12px 30px -18px rgba(0,0,0,0.6);
+    transition:transform .18s ease;
+  }
+  .logo-chip:hover{transform:translateY(-4px);}
+  .logo-chip img{max-height:64px; max-width:130px; width:auto; object-fit:contain;}
+
+  section{padding:92px 0;}
+  .section-head{max-width:640px; margin:0 0 48px;}
+  .section-head h2{font-size:clamp(28px,3.8vw,42px); margin-top:12px;}
+  .section-head p{font-size:16.5px; color:var(--ink-soft); margin-top:14px;}
+  .center{text-align:center; margin-left:auto; margin-right:auto;}
+
+  /* ABOUT */
+  .about{
+    display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;
+    background:var(--bg-soft); border:1px solid var(--line); border-radius:24px; padding:48px;
+  }
+  .about-photo{
+    position:relative; border-radius:18px; overflow:hidden;
+    border:1px solid var(--line); box-shadow:var(--shadow);
+  }
+  .about-photo img{width:100%; height:440px; object-fit:cover; object-position:20% center; filter:grayscale(0.15);}
+  .about-photo .medal{
+    position:absolute; top:16px; right:16px;
+    background:linear-gradient(150deg, var(--pink), #7A1044);
+    color:#fff; font-family:'Archivo', sans-serif; font-weight:900;
+    padding:10px 14px; border-radius:10px; font-size:13px; letter-spacing:0.1em;
+    box-shadow:var(--shadow);
+  }
+  .about h2{font-size:clamp(26px,3.2vw,36px); margin:14px 0 16px;}
+  .about p{color:var(--ink-soft); font-size:15.5px; margin:0 0 14px;}
+  .about-facts{list-style:none; margin:22px 0 0; padding:0; display:grid; gap:12px;}
+  .about-facts li{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--ink-soft);}
+  .about-facts b{color:var(--ink);}
+  .dot{flex:none; width:7px; height:7px; border-radius:50%; background:var(--pink-bright); margin-top:8px;}
+
+  /* PROCESS GRID */
+  .process-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .p-card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:28px 26px; transition:transform .18s ease, border-color .18s ease;
+  }
+  .p-card:hover{transform:translateY(-4px); border-color:rgba(236,28,110,0.45);}
+  .p-card .n{font-family:'Archivo', sans-serif; font-weight:900; font-size:13px; color:var(--pink-bright); letter-spacing:0.08em;}
+  .p-card h3{font-size:19px; text-transform:none; margin:12px 0 10px; letter-spacing:0;}
+  .p-card p{font-size:14px; color:var(--ink-soft); margin:0;}
+
+  /* TESTIMONIALS */
+  .tgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .tcard{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:30px 28px; display:flex; flex-direction:column; gap:16px;
+  }
+  .tcard .logo-badge{background:#fff; border-radius:10px; padding:10px; height:66px; width:120px; display:flex; align-items:center; justify-content:center;}
+  .tcard .logo-badge img{max-height:46px; max-width:96px; object-fit:contain;}
+  .tcard p{font-size:14.5px; color:var(--ink-soft); margin:0; flex:1;}
+  .tcard .who{border-top:1px solid var(--line); padding-top:16px; margin-top:4px;}
+  .tcard .name{font-weight:700; font-size:14.5px;}
+  .tcard .role{font-size:12.5px; color:var(--pink-bright); margin-top:2px;}
+
+  /* BOOK */
+  .book{
+    display:grid; grid-template-columns:0.5fr 1fr; gap:48px; align-items:center;
+    background:linear-gradient(135deg, var(--bg-soft), var(--bg));
+    border:1px solid var(--line); border-radius:24px; padding:56px;
+  }
+  .book-cover{
+    aspect-ratio:3/4.4; border-radius:12px; background:var(--card);
+    border:1px solid var(--line); box-shadow:var(--shadow);
+    display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
+    padding:26px; gap:6px;
+  }
+  .book-cover .t1{font-family:'Archivo', sans-serif; font-weight:900; font-size:28px; text-transform:uppercase; line-height:1;}
+  .book-cover .t2{font-family:'Archivo', sans-serif; font-weight:900; font-size:28px; text-transform:uppercase; color:var(--pink-bright); line-height:1;}
+  .book-cover .sub{font-size:11.5px; color:var(--ink-soft); margin-top:10px; letter-spacing:0.04em;}
+  .book h2{font-size:clamp(24px,3vw,32px); margin:14px 0 14px;}
+  .book p{color:var(--ink-soft); font-size:15.5px; max-width:56ch; margin:0 0 22px;}
+
+  /* FINAL CTA */
+  .final-cta{
+    background:linear-gradient(135deg, #2A0F1B, var(--bg-soft));
+    border:1px solid var(--line);
+    border-radius:24px; padding:64px 56px; text-align:center; position:relative; overflow:hidden;
+  }
+  .final-cta::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(500px 260px at 50% 0%, rgba(236,28,110,0.24), transparent 65%);
+  }
+  .final-cta h2{position:relative; font-size:clamp(26px,4vw,42px); max-width:22ch; margin:0 auto 16px;}
+  .final-cta p{position:relative; color:var(--ink-soft); max-width:52ch; margin:0 auto 30px; font-size:16px;}
+  .phones{position:relative; display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin-bottom:28px; font-size:14.5px; color:var(--ink-soft);}
+  .phones b{color:var(--ink); font-family:'Archivo', sans-serif; font-size:17px; letter-spacing:0.02em;}
+
+  footer{padding:44px 0 36px; border-top:1px solid var(--line);}
+  .foot-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
+  .foot-row img{height:18px; width:auto;}
+  .foot-social{display:flex; gap:14px;}
+  .foot-social a{
+    width:38px; height:38px; border-radius:50%; border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; text-decoration:none;
+    transition:background .16s ease, color .16s ease, border-color .16s ease;
+  }
+  .foot-social a:hover{background:var(--pink); color:#fff; border-color:var(--pink);}
+  .foot-copy{font-size:12.5px; color:var(--ink-soft);}
+
+  @media (max-width: 940px){
+    .hero-grid{grid-template-columns:1fr; gap:36px; padding:52px 0 48px;}
+    .hero-photo{order:-1; max-width:480px;}
+    .hero-photo img{height:380px;}
+    .stat-strip{grid-template-columns:repeat(2,1fr); row-gap:24px;}
+    .about{grid-template-columns:1fr; padding:32px 22px;}
+    .about-photo{max-width:420px; margin:0 auto;}
+    .about-photo img{height:360px;}
+    .process-grid{grid-template-columns:1fr;}
+    .tgrid{grid-template-columns:1fr;}
+    .book{grid-template-columns:1fr; padding:32px 22px;}
+    .book-cover{max-width:220px; margin:0 auto;}
+    .final-cta{padding:48px 26px;}
+    .navlinks, .nav-phone{display:none;}
+    .burger{display:block;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; scroll-behavior:auto !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Mark Mills OBE DL">
+      <img src="images/logo-2.png" alt="Mark Mills" />
+      <span class="obe">OBE · DL</span>
+    </a>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">The Process</a></li>
+      <li><a href="#clients">My Clients</a></li>
+      <li><a href="https://www.amazon.co.uk/Making-Your-Mark-built-fortune/dp/0857197789" target="_blank" rel="noopener">The Book</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-phone">01772 688990</span>
+      <a class="btn btn-primary" style="padding:12px 22px; font-size:13.5px;" href="#contact">Get In Touch</a>
+    </div>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('mnav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="mnav" class="wrap" style="padding:0 28px 20px;">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">The Process</a></li>
+      <li><a href="#clients">My Clients</a></li>
+      <li><a href="https://www.amazon.co.uk/Making-Your-Mark-built-fortune/dp/0857197789" target="_blank" rel="noopener">The Book</a></li>
+    </ul>
+    <a class="btn btn-primary" style="width:100%;" href="#contact">Get In Touch</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-inner">
+          <span class="eyebrow">● Confidential business sale advisory</span>
+          <h1>Time to sell <span>your</span> business?</h1>
+          <p class="lede">Been dreaming about selling out in 2026? If you keep imagining having all the money your business is worth — rather than continuing to work in it — you're ready. Mark Mills OBE DL sold his own company, Cardpoint plc, and has spent every year since 2007 applying his proven 40-step process to help owners realise more value than they thought possible.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get In Touch</a>
+            <a class="btn btn-outline" href="tel:01772688990">Call 01772 688990</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="frame">
+            <img src="images/mark-portrait.jpg" alt="Portrait of Mark Mills OBE DL" />
+          </div>
+          <div class="tag">
+            <div class="n">Mark Mills OBE DL</div>
+            <div class="r">Founder, Cardpoint plc</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="stat-strip">
+        <div class="stat"><div class="num">33</div><div class="lbl">Years experience</div></div>
+        <div class="stat"><div class="num">40</div><div class="lbl">Step sale process</div></div>
+        <div class="stat"><div class="num">£100m</div><div class="lbl">Cardpoint exit revenue</div></div>
+        <div class="stat"><div class="num">OBE</div><div class="lbl">Services to business, 2025</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT LOGOS -->
+  <div class="clients-strip">
+    <div class="wrap">
+      <div class="lead">Owners he has guided to a full-value exit</div>
+      <div class="logo-row">
+        <div class="logo-chip"><img src="images/client-tactical.png" alt="Tactical Solutions" /></div>
+        <div class="logo-chip"><img src="images/client-healthcare.png" alt="Healthcare Communications" /></div>
+        <div class="logo-chip"><img src="images/client-garside.png" alt="Garside &amp; Laycock" /></div>
+        <div class="logo-chip"><img src="images/client-minicam.png" alt="Mini-Cam" /></div>
+        <div class="logo-chip"><img src="images/client-premium.png" alt="Premium LPC" /></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="about-photo">
+          <img src="images/mark-portrait.jpg" alt="Mark Mills OBE DL" />
+          <div class="medal">OBE · DL</div>
+        </div>
+        <div>
+          <span class="eyebrow">Unlike any other advisor</span>
+          <h2>Mark Mills OBE DL</h2>
+          <p>Unlike most advisors, Mark has built and sold his own business. He grew Cardpoint plc from a start-up in 2000 to £100m in annual revenue by 2006, with EBITDA of £19.8m — then exited it, before writing the forty-step process he now applies to owners like you.</p>
+          <p>If your business is like no other, you need an advisor who's actually done it. Mark can and will provide excellent references, but the real proof is in his track record and reputation.</p>
+          <ul class="about-facts">
+            <li><span class="dot"></span><span><b>2022</b> — Appointed Deputy Lieutenant of Lancashire by HM Lord-Lieutenant, The Lord Shuttleworth.</span></li>
+            <li><span class="dot"></span><span><b>2025</b> — Awarded an OBE in The King's New Year Honours List for services to Business and Charity.</span></li>
+            <li><span class="dot"></span><span><b>Since 2007</b> — Applying his process to help business owners achieve a full-value, confidential exit.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The 40-step process</span>
+        <h2>You only get one chance — so take it.</h2>
+        <p>A forty-step process sounds like a lot when you first consider exiting your business. But only you know the true, and often hidden, value your business holds. Here's what Mark's process is built on.</p>
+      </div>
+      <div class="process-grid">
+        <div class="p-card"><div class="n">01</div><h3>Full value</h3><p>You've dedicated years and made sacrifices for your business — you deserve full value for it.</p></div>
+        <div class="p-card"><div class="n">02</div><h3>Deep understanding</h3><p>Advisors who skip across your business and tip off competitors get short shrift here.</p></div>
+        <div class="p-card"><div class="n">03</div><h3>Hidden value</h3><p>Your business has depth not everyone can see — Mark knows how to find and prove it.</p></div>
+        <div class="p-card"><div class="n">04</div><h3>Your right hand men &amp; women</h3><p>The colonels who built the business with you are looked after throughout the process.</p></div>
+        <div class="p-card"><div class="n">05</div><h3>Total confidence</h3><p>You've spent your life keeping confidences. This process is built to protect yours too.</p></div>
+        <div class="p-card"><div class="n">06</div><h3>A unique, enjoyable process</h3><p>Mark loves the detail, holds his own in any room, and is on your side like nobody else.</p></div>
+        <div class="p-card"><div class="n">07</div><h3>Trust</h3><p>A trusted advisor to company owners, private equity houses, brokers and investors alike.</p></div>
+        <div class="p-card"><div class="n">08</div><h3>Time</h3><p>Mark spends time with you every week — collaborative, and built around your outcome.</p></div>
+        <div class="p-card"><div class="n">09</div><h3>Aligned fees</h3><p>Mark's fees are weighted to a successful outcome, so his incentive is your maximum value.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS / TESTIMONIALS -->
+  <section id="clients">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">My clients</span>
+        <h2>Biggest and best valuations</h2>
+        <p>Owner-managers who founded, built and adored their businesses — and were ready to realise the fruits of their labour. Here's what it was like to work with Mark, in their own words.</p>
+      </div>
+      <div class="tgrid">
+        <div class="tcard">
+          <div class="logo-badge"><img src="images/client-tactical.png" alt="Tactical Solutions" /></div>
+          <p>Mark is very warm and really helped me hold the other Board Members to account. He expected everybody to be on their A-game. We exited for far more than we originally envisaged and Mark led us effortlessly through the process.</p>
+          <div class="who">
+            <div class="name">Lorna Davidson</div>
+            <div class="role">Founder, Tactical Solutions — exited to St Ives plc</div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="logo-badge"><img src="images/client-healthcare.png" alt="Healthcare Communications" /></div>
+          <p>As Chairman, Mark hit the ground running and held us to account whilst offering profitable strategic insight that helped drive sales. The exit was for more than we expected, clean and less onerous.</p>
+          <div class="who">
+            <div class="name">Mike Cunningham</div>
+            <div class="role">Founder, Healthcare Communications — sold to IMI Mobile / Cisco</div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="logo-badge"><img src="images/client-garside.png" alt="Garside &amp; Laycock" /></div>
+          <p>I brought Mark in expecting to learn a few things and wanting to exit the business I'd founded 30 years earlier. He was excellent — I found somebody I could confide in with my best interests at heart.</p>
+          <div class="who">
+            <div class="name">Paul Garside</div>
+            <div class="role">Founder, Garside &amp; Laycock — exited to SPIE (Europe)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section>
+    <div class="wrap">
+      <div class="book">
+        <div class="book-cover">
+          <div class="t1">Making</div>
+          <div class="t1">Your</div>
+          <div class="t2">Mark</div>
+          <div class="sub">HOW I BUILT MY FORTUNE — MARK MILLS</div>
+        </div>
+        <div>
+          <span class="eyebrow">From the man who's done it</span>
+          <h2>Making Your Mark</h2>
+          <p>Mark's own story of building and exiting Cardpoint plc — the same experience behind the 40-step process he now applies to help other owners achieve their full-value exit.</p>
+          <a class="btn btn-outline" href="https://www.amazon.co.uk/Making-Your-Mark-built-fortune/dp/0857197789" target="_blank" rel="noopener">Read it on Amazon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="final-cta">
+        <span class="eyebrow">Book a call</span>
+        <h2>Ready to discuss your next steps?</h2>
+        <p>A no-obligation, confidential chat about achieving your dream sale — within the next 12 months.</p>
+        <div class="phones">
+          <span>North: <b>01772 688990</b></span>
+          <span>South: <b>020 7989 7989</b></span>
+        </div>
+        <a class="btn btn-primary" href="tel:01772688990">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <img src="images/logo-2.png" alt="Mark Mills" />
+      <span class="foot-copy">© Mark Mills — All rights reserved</span>
+    </div>
+    <div class="foot-social">
+      <a href="https://Twitter.com/markmillstweets" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://Linkedin.com/in/markrichardmills" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    header.style.boxShadow = window.scrollY > 8 ? '0 8px 24px -12px rgba(0,0,0,0.5)' : 'none';
+  }, {passive:true});
+
+  // Close mobile menu on link tap
+  document.querySelectorAll('#mnav a').forEach(a =>
+    a.addEventListener('click', () => document.getElementById('mnav').classList.remove('open'))
+  );
+</script>
+
+</body>
+</html>
