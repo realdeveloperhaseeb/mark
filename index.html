@@ -11,7 +11,7 @@
 <link rel="icon" href="images/logo-1.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Great+Vibes&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#141317;
@@ -27,6 +27,9 @@
     --radius:14px;
     --shadow: 0 24px 60px -24px rgba(0,0,0,0.65);
     --maxw: 1180px;
+    --font-sans:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sig:'Great Vibes', cursive;
+    --font-hand:'Dancing Script', cursive;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -34,7 +37,7 @@
     margin:0;
     background:var(--bg);
     color:var(--ink);
-    font-family:'Inter', -apple-system, sans-serif;
+    font-family:var(--font-sans);
     font-size:16px;
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
@@ -43,13 +46,18 @@
   img{max-width:100%; display:block;}
   a{color:inherit;}
   h1,h2,h3{
-    font-family:'Archivo', sans-serif;
+    font-family:var(--font-sans);
     font-weight:800;
     line-height:1.06;
     margin:0;
-    letter-spacing:-0.01em;
+    letter-spacing:-0.02em;
     text-transform:uppercase;
   }
+  .sig{
+    font-family:var(--font-sig); text-transform:none; font-weight:400;
+    color:var(--pink-bright); letter-spacing:0; line-height:1;
+  }
+  .hand{font-family:var(--font-hand); text-transform:none; letter-spacing:0;}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
   .eyebrow{
     display:inline-flex; align-items:center; gap:8px;
@@ -58,7 +66,7 @@
   }
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:8px;
-    font-family:'Inter', sans-serif; font-weight:700; font-size:14.5px;
+    font-family:var(--font-sans); font-weight:700; font-size:14.5px;
     padding:16px 30px; border-radius:6px; border:2px solid transparent;
     cursor:pointer; text-decoration:none; white-space:nowrap;
     letter-spacing:0.02em;
@@ -83,7 +91,7 @@
   .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 0; gap:24px;}
   .logo{display:flex; align-items:center; gap:12px; text-decoration:none;}
   .logo img{height:20px; width:auto;}
-  .logo .obe{font-family:'Archivo', sans-serif; font-weight:700; font-size:11px; letter-spacing:0.16em; color:var(--pink-bright); padding-left:12px; border-left:1px solid var(--line);}
+  .logo .obe{font-family:var(--font-sans); font-weight:700; font-size:11px; letter-spacing:0.16em; color:var(--pink-bright); padding-left:12px; border-left:1px solid var(--line);}
   .navlinks{display:flex; gap:30px; list-style:none; margin:0; padding:0; font-size:14px; font-weight:600;}
   .navlinks a{text-decoration:none; color:var(--ink-soft); transition:color .15s ease;}
   .navlinks a:hover{color:var(--ink);}
@@ -111,6 +119,7 @@
   .hero-inner{max-width:600px;}
   .hero h1{font-size:clamp(38px,5.2vw,64px); margin:20px 0 22px;}
   .hero h1 span{color:var(--pink-bright);}
+  .hero-hand{font-size:clamp(24px,3.2vw,32px); color:var(--pink-bright); margin:0 0 20px; font-weight:700;}
   .hero p.lede{font-size:18px; color:var(--ink-soft); max-width:54ch; margin:0 0 32px;}
   .hero-actions{display:flex; gap:14px; flex-wrap:wrap;}
   .hero-photo{position:relative;}
@@ -125,7 +134,7 @@
     background:rgba(20,19,23,0.72); backdrop-filter:blur(6px);
     border:1px solid var(--line); border-radius:12px; padding:12px 16px;
   }
-  .hero-photo .tag .n{font-family:'Archivo', sans-serif; font-weight:800; font-size:15px; text-transform:uppercase; letter-spacing:0.01em;}
+  .hero-photo .tag .tag-sig{font-size:34px; margin-bottom:2px;}
   .hero-photo .tag .r{font-size:12px; color:var(--pink-bright); font-weight:600; margin-top:2px; letter-spacing:0.04em;}
 
   .stat-strip{
@@ -133,7 +142,7 @@
     border-top:1px solid var(--line); border-bottom:1px solid var(--line);
     padding:30px 0; display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
   }
-  .stat .num{font-family:'Archivo', sans-serif; font-weight:900; font-size:clamp(26px,3vw,38px); color:var(--pink-bright);}
+  .stat .num{font-family:var(--font-sans); font-weight:800; font-size:clamp(26px,3vw,38px); color:var(--pink-bright);}
   .stat .lbl{font-size:12.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.06em; margin-top:4px;}
 
   /* CLIENT LOGOS */
@@ -168,7 +177,7 @@
   .about-photo .medal{
     position:absolute; top:16px; right:16px;
     background:linear-gradient(150deg, var(--pink), #7A1044);
-    color:#fff; font-family:'Archivo', sans-serif; font-weight:900;
+    color:#fff; font-family:var(--font-sans); font-weight:800;
     padding:10px 14px; border-radius:10px; font-size:13px; letter-spacing:0.1em;
     box-shadow:var(--shadow);
   }
@@ -178,6 +187,9 @@
   .about-facts li{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--ink-soft);}
   .about-facts b{color:var(--ink);}
   .dot{flex:none; width:7px; height:7px; border-radius:50%; background:var(--pink-bright); margin-top:8px;}
+  .signoff{margin-top:26px; padding-top:22px; border-top:1px solid var(--line);}
+  .signoff .sig{font-size:46px;}
+  .signoff-role{font-size:12.5px; color:var(--ink-soft); letter-spacing:0.06em; text-transform:uppercase; margin-top:2px;}
 
   /* PROCESS GRID */
   .process-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
@@ -186,7 +198,7 @@
     padding:28px 26px; transition:transform .18s ease, border-color .18s ease;
   }
   .p-card:hover{transform:translateY(-4px); border-color:rgba(236,28,110,0.45);}
-  .p-card .n{font-family:'Archivo', sans-serif; font-weight:900; font-size:13px; color:var(--pink-bright); letter-spacing:0.08em;}
+  .p-card .n{font-family:var(--font-sans); font-weight:800; font-size:13px; color:var(--pink-bright); letter-spacing:0.08em;}
   .p-card h3{font-size:19px; text-transform:none; margin:12px 0 10px; letter-spacing:0;}
   .p-card p{font-size:14px; color:var(--ink-soft); margin:0;}
 
@@ -215,8 +227,8 @@
     display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
     padding:26px; gap:6px;
   }
-  .book-cover .t1{font-family:'Archivo', sans-serif; font-weight:900; font-size:28px; text-transform:uppercase; line-height:1;}
-  .book-cover .t2{font-family:'Archivo', sans-serif; font-weight:900; font-size:28px; text-transform:uppercase; color:var(--pink-bright); line-height:1;}
+  .book-cover .t1{font-family:var(--font-hand); font-weight:700; font-size:36px; text-transform:none; line-height:0.95;}
+  .book-cover .t2{font-family:var(--font-sans); font-weight:800; font-size:28px; text-transform:uppercase; color:var(--pink-bright); line-height:1;}
   .book-cover .sub{font-size:11.5px; color:var(--ink-soft); margin-top:10px; letter-spacing:0.04em;}
   .book h2{font-size:clamp(24px,3vw,32px); margin:14px 0 14px;}
   .book p{color:var(--ink-soft); font-size:15.5px; max-width:56ch; margin:0 0 22px;}
@@ -234,7 +246,7 @@
   .final-cta h2{position:relative; font-size:clamp(26px,4vw,42px); max-width:22ch; margin:0 auto 16px;}
   .final-cta p{position:relative; color:var(--ink-soft); max-width:52ch; margin:0 auto 30px; font-size:16px;}
   .phones{position:relative; display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin-bottom:28px; font-size:14.5px; color:var(--ink-soft);}
-  .phones b{color:var(--ink); font-family:'Archivo', sans-serif; font-size:17px; letter-spacing:0.02em;}
+  .phones b{color:var(--ink); font-family:var(--font-sans); font-size:17px; letter-spacing:0.02em;}
 
   footer{padding:44px 0 36px; border-top:1px solid var(--line);}
   .foot-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
@@ -311,6 +323,7 @@
         <div class="hero-inner">
           <span class="eyebrow">● Confidential business sale advisory</span>
           <h1>Time to sell <span>your</span> business?</h1>
+          <p class="hand hero-hand">Been there. Built it. Sold it.</p>
           <p class="lede">Been dreaming about selling out in 2026? If you keep imagining having all the money your business is worth — rather than continuing to work in it — you're ready. Mark Mills OBE DL sold his own company, Cardpoint plc, and has spent every year since 2007 applying his proven 40-step process to help owners realise more value than they thought possible.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Get In Touch</a>
@@ -322,8 +335,8 @@
             <img src="images/mark-portrait.jpg" alt="Portrait of Mark Mills OBE DL" />
           </div>
           <div class="tag">
-            <div class="n">Mark Mills OBE DL</div>
-            <div class="r">Founder, Cardpoint plc</div>
+            <div class="sig tag-sig">Mark Mills</div>
+            <div class="r">OBE DL · Founder, Cardpoint plc</div>
           </div>
         </div>
       </div>
@@ -370,6 +383,10 @@
             <li><span class="dot"></span><span><b>2025</b> — Awarded an OBE in The King's New Year Honours List for services to Business and Charity.</span></li>
             <li><span class="dot"></span><span><b>Since 2007</b> — Applying his process to help business owners achieve a full-value, confidential exit.</span></li>
           </ul>
+          <div class="signoff">
+            <div class="sig">Mark Mills</div>
+            <div class="signoff-role">Mark Mills OBE DL</div>
+          </div>
         </div>
       </div>
     </div>
